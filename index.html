@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trần Tùng Quang - Sinh viên</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="container header-content">
+        <a class="logo" href="#home">TTQ</a>
+        <nav class="menu">
+          <a href="#about">Giới thiệu</a>
+          <a href="#skills">Kỹ năng</a>
+          <a href="#projects">Dự án</a>
+          <a href="#contact">Liên hệ</a>
+        </nav>
+        <button class="menu-button" type="button">☰</button>
+        <button class="theme-button" type="button">chế độ sáng/tối</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="intro" id="home">
+        <div class="container">
+          <p>Xin chào, mình là</p>
+          <h1>Trần Tùng Quang</h1>
+          <p>Sinh viên Học viện Công nghệ Bưu chính Viễn thông.</p>
+
+          <a class="button" href="#contact">Liên hệ với mình</a>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container about">
+          <h2>Giới thiệu</h2>
+          <p>
+            Mình là sinh viên năm 2, yêu thích lập trình web và muốn học thêm
+            nhiều kiến thức thực tế.
+          </p>
+          <p>
+            Hiện tại, mình đang sinh sống và làm việc tại Hà Nội. Mình là một
+            người vui vẻ, hòa đồng và thích học hỏi cái điều mới. Trong thời
+            gian rảnh, mình thường thích đọc sách, nghe nhạc và thể thao. Rất
+            vui được làm quen và kết bạn với tất cả mọi người."
+          </p>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="container">
+          <h2>Kỹ năng</h2>
+          <div class="skills">
+            <div class="card">
+              <h3>HTML</h3>
+              <p>Tạo cấu trúc cho trang web.</p>
+            </div>
+            <div class="card">
+              <h3>CSS</h3>
+              <p>Thiết kế giao diện và responsive.</p>
+            </div>
+            <div class="card">
+              <h3>JavaScript</h3>
+              <p>Thêm tương tác cho trang web.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="container">
+          <h2>Dự án</h2>
+          <div class="project-tools">
+            <input id="search" type="search" placeholder="Tìm dự án..." />
+            <div>
+              <button class="filter-button active" data-category="all">
+                Tất cả
+              </button>
+              <button class="filter-button" data-category="web">Web</button>
+              <button class="filter-button" data-category="school">
+                Bài tập
+              </button>
+            </div>
+          </div>
+          <div class="projects">
+            <div
+              class="card project"
+              data-name="website cá nhân"
+              data-category="web"
+            >
+              <h3>Website cá nhân</h3>
+              <p>Trang giới thiệu bản thân bằng HTML, CSS và JavaScript.</p>
+            </div>
+            <div
+              class="card project"
+              data-name="website bán hàng"
+              data-category="web"
+            >
+              <h3>Website bán hàng</h3>
+              <p>Giao diện cửa hàng đơn giản cho bài tập nhóm.</p>
+            </div>
+            <div
+              class="card project"
+              data-name="quản lý sinh viên"
+              data-category="school"
+            >
+              <h3>Quản lý sinh viên</h3>
+              <p>Ý tưởng ứng dụng quản lý thông tin sinh viên.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container contact">
+          <h2>Liên hệ</h2>
+          <form id="contact-form">
+            <label for="name">Họ và tên</label>
+            <input id="name" type="text" placeholder="Nhập họ tên" />
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Nhập email" />
+            <label for="message">Tin nhắn</label>
+            <textarea
+              id="message"
+              maxlength="300"
+              placeholder="Nhập tin nhắn"
+            ></textarea>
+            <p id="character-count">0/300 ký tự</p>
+            <button class="button" type="submit">Gửi</button>
+            <p class="form-result" id="form-result"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Trần Tùng Quang</p>
+    </footer>
+  </body>
+</html>
